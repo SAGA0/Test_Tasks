@@ -1,0 +1,112 @@
+.header {
+    display: flex;
+    align-items: flex-start;
+    color: #fff;
+
+
+    @media (max-width: 847px) {
+        background: #0E1014;
+        padding: 2rem 1.6rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-right: auto;
+        width: 14rem;
+
+        @media (max-width: 1000px) {
+            display: none;
+        }
+
+        font-family: 'Montserrat',
+        sans-serif;
+
+        &__item {
+            display: inline;
+
+            .icon {
+                width: 14rem;
+                height: 2.4rem;
+            }
+        }
+
+        &__text {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    }
+
+    .nav {
+        font-family: 'Inter', sans-serif;
+
+
+        @media (max-width: 847px) {
+            width: 100%;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            font-weight: 500;
+
+            @media (max-width: 847px) {
+                justify-content: center;
+            }
+
+
+            &__item {
+                &:last-child {
+                    @media (max-width: 847px) {
+                        display: none;
+                    }
+                }
+            }
+
+            font-size: 1.6rem;
+
+            a {
+                color: #fff
+            }
+        }
+    }
+
+    .social {
+        margin-left: auto;
+        font-family: 'Inter', sans-serif;
+
+        @media (max-width: 847px) {
+            display: none;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            font-size: 1.6rem;
+
+            &__item {
+                cursor: pointer;
+
+
+                a {
+                    color: #fff;
+                    margin-right: 4.7rem;
+                    font-weight: 500;
+                }
+
+                .icon {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+
+    font-size: 1.6rem;
+    background: #0E1014;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 31.1rem;
+        height: 31.1rem;
+        left: 0;
+        top: 2rem;
+        z-index: 9999;
+        background: #961A1A;
+        opacity: 0.5;
+        filter: blur(19.6rem);
+    }
+
+}
+
+.container {
+    max-width: 114rem;
+    width: 100%;
+    margin: 0 auto;
+
+    &::after {
+        content: '';
+        border-radius: 100%;
+        position: absolute;
+        width: 2.8rem;
+        height: 2.8rem;
+        left: 85.1rem;
+        top: 54.7rem;
+
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%);
+        box-shadow: .3rem .6rem 2.7rem -1rem rgba(223, 125, 125, 0.25);
+        filter: blur(.2rem);
+        backdrop-filter: blur(.2rem);
+    }
+
+
+}
+
+.main {
+    padding: 4.6rem 0 0 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 25.9rem;
+        height: 25.9rem;
+        left: 60.2rem;
+        top: 0rem;
+
+        background: #833AB4;
+        opacity: 0.5;
+        filter: blur(19.6rem);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 8.3rem;
+        height: 8.3rem;
+        left: 51.9rem;
+        top: 8.3rem;
+        border-radius: 100%;
+
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%);
+        box-shadow: .3rem .6reem 2.7rem --1rem rgba(223, 125, 125, 0.25);
+        backdrop-filter: blur(.2rem);
+
+    }
+
+
+    @media (max-width: 1070px) {
+        padding: 2rem 1.6rem 1rem 2rem;
+    }
+}

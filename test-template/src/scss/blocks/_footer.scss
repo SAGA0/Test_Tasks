@@ -1,0 +1,116 @@
+.footer {
+    margin-top: 4rem;
+    font-family: 'Inter', sans-serif;
+
+    &-lists {
+        display: flex;
+        gap: 16.8rem;
+
+        @media (max-width: 847px) {
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+
+    &-list {
+        .nav {
+            display: flex;
+            flex-direction: column;
+            max-height: 15.5rem;
+            flex-wrap: wrap;
+
+
+            @media (max-width: 847px) {
+                max-height: 17.5rem;
+            }
+
+            gap: 1rem;
+
+            &__item {
+                font-weight: 400;
+
+                @media (max-width: 847px) {
+                    max-width: 20.3rem;
+                }
+
+                margin-right: 5.2rem;
+
+                &-link {
+                    color: #fff;
+                }
+            }
+        }
+
+        &__title {
+            margin-bottom: 2rem;
+            font-weight: bold;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            text-transform: uppercase;
+            color: #656566;
+        }
+
+        &:last-child {
+            // margin-left: auto;
+            align-items: flex-end;
+
+
+            @media (max-width: 847px) {
+                align-items: flex-start;
+            }
+
+            .nav {
+                align-items: flex-end;
+                gap: 2rem;
+
+                @media (max-width: 847px) {
+                    align-items: flex-start;
+                }
+
+                &__item {
+                    margin: 0;
+
+
+
+
+                    .icon {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+            }
+
+            .footer-list__title {
+                text-align: end;
+                margin-bottom: 2rem;
+
+                @media (max-width: 847px) {
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    .rights {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        align-items: flex-end;
+        font-size: 1.2rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 3.3rem;
+
+        @media (max-width: 847px) {
+            align-items: flex-start;
+        }
+
+        * {
+            font-weight: 300;
+            color: #fff;
+        }
+
+        &__link {
+            text-decoration: underline;
+        }
+    }
+}
